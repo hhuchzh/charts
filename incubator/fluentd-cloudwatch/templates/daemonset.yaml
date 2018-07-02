@@ -39,6 +39,8 @@ spec:
           value: {{ .Values.awsRegion }}
         - name: LOG_GROUP_NAME
           value: {{ .Values.logGroupName }}
+        - name: SERVICE_GROUP_NAME
+          value: {{ .Values.ServiceGroupName }}
 {{- if not .Values.awsRole }}
         - name: AWS_ACCESS_KEY_ID
           valueFrom:
